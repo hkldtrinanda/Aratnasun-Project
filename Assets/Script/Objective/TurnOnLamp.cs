@@ -6,8 +6,16 @@ using UnityEngine;
 public class TurnOnLamp : MonoBehaviour
 {
     public GameObject lamp, interactUI;
+
+    public AudioSource saklarAudio;
+    
     public bool PlayerInRange;
+
+    [Header("Collider Settings")] 
+    public Collider2D[] colliders;
+    
     // Start is called before the first frame update
+    
     void Start()
     {
         lamp.gameObject.SetActive(false);
@@ -21,17 +29,19 @@ public class TurnOnLamp : MonoBehaviour
             if (lamp.activeInHierarchy)
             {
                 lamp.SetActive(false);
-                
-
-                
+                saklarAudio.Play();
+                colliders[0].enabled = false;
+                colliders[1].enabled = false;
             }
             else
             {
-
                 lamp.SetActive(true);
                 interactUI.SetActive(true);
-                // dialogText.text = dialog;
+                saklarAudio.Play();
+                colliders[0].enabled = true;
+                colliders[1].enabled = true;
                 
+                // dialogText.text = dialog;
             }
         }
     }
@@ -52,8 +62,6 @@ public class TurnOnLamp : MonoBehaviour
         {
             interactUI.SetActive(false);
             PlayerInRange = false;
-            
-
         }
     }
 }

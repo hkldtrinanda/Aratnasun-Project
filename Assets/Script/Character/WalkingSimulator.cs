@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WalkingSimulator : MonoBehaviour
@@ -7,6 +8,9 @@ public class WalkingSimulator : MonoBehaviour
     public float JumpForce = 7;
     public bool facingRight = true;
     public Animator anim;
+
+    public GameObject bangku = GameObject.FindGameObjectWithTag("Object");
+    public bool playerInrange;
     /*public Animator animator;*/
     
 
@@ -26,6 +30,17 @@ public class WalkingSimulator : MonoBehaviour
         // KODE FLIP MOVEMENT
         if (movement < 0 && facingRight) Flip();
         if (movement > 0 && !facingRight) Flip();
+        
+        //duduk
+        if (Input.GetKeyDown(KeyCode.E) && gameObject.CompareTag("Object"))
+        {
+            anim.SetBool("Duduk", true);
+        }
+        else
+        {
+            anim.SetBool("Duduk", false);
+        }
+
         // KODE LOMPAT
         /*if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
@@ -55,6 +70,13 @@ public class WalkingSimulator : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("pause");
         } */
     }
+
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        
+    }
+
     // KODE FLIP MOVEMENT
     private void Flip()
     {
