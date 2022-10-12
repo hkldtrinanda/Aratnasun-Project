@@ -8,6 +8,8 @@ public class AnimationScript : MonoBehaviour
     public GameObject interactUI;
     public bool PlayerInRange;
     public AudioSource audioSource;
+    
+    public Collider2D collider;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class AnimationScript : MonoBehaviour
                 animator.SetBool("IsOpen", true);
                 
                 audioSource.Play();
+                collider.enabled = false;
             }
 
         }
@@ -39,6 +42,7 @@ public class AnimationScript : MonoBehaviour
         {
             interactUI.SetActive(true);
             PlayerInRange = true;
+            
             /*gameManager.counter++;*/
         }
     }
