@@ -650,9 +650,6 @@
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
- <Reference Include="PsdPlugin">
- <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -674,17 +671,17 @@
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <Reference Include="Unity.InternalAPIEditorBridge.001">
+ <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>Z:/GIT New/Aratnasun-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
