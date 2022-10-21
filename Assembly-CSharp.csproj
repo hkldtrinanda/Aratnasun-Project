@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\Objective\AnimationScript.cs" />
      <Compile Include="Assets\Script\Objective\TurnOnLamp.cs" />
      <Compile Include="Assets\Script\Character\WalkingSimulator.cs" />
+     <Compile Include="Assets\Script\Interactive\NextScene.cs" />
      <None Include="Assets\Sprite\SPLASHSCREEN\Readme!.txt" />
      <None Include="Assets\Audio\Main Menu Audio\Readme!.txt" />
      <None Include="Assets\Script\Readme!.txt" />

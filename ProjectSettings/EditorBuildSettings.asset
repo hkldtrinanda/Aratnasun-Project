@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RuangKerjaAyah.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: dd5fd9d58624b4f49b9c1d052452c7f9
+  - enabled: 1
+    path: Assets/Scenes/RuangTengah.unity
+    guid: 66cba07dbc1df4e42b1003d32946b131
+  - enabled: 1
+    path: Assets/Scenes/RuangMakan.unity
+    guid: 12c1a1c7f1af863498d1c44986f35f6d
   m_configObjects: {}

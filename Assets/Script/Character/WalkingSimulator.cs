@@ -9,7 +9,7 @@ public class WalkingSimulator : MonoBehaviour
     public bool facingRight = true;
     public Animator anim;
 
-    public GameObject bangku = GameObject.FindGameObjectWithTag("Object");
+    /*public GameObject bangku = GameObject.FindGameObjectWithTag("Object");*/
     public bool playerInrange;
     /*public Animator animator;*/
     
@@ -32,14 +32,14 @@ public class WalkingSimulator : MonoBehaviour
         if (movement > 0 && !facingRight) Flip();
         
         //duduk
-        if (Input.GetKeyDown(KeyCode.E) && gameObject.CompareTag("Object"))
+        /*if (Input.GetKeyDown(KeyCode.E) && gameObject.CompareTag("Object"))
         {
             anim.SetBool("Duduk", true);
         }
         else
         {
             anim.SetBool("Duduk", false);
-        }
+        }*/
 
         // KODE LOMPAT
         /*if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
