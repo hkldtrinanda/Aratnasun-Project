@@ -480,6 +480,7 @@ MonoBehaviour:
   BGUI: {fileID: 4304436801235261378}
   Char1: {fileID: 0}
   Char2: {fileID: 0}
+  player: {fileID: 0}
   name_character_di_sentences:
   - Lintang
   - Ibu

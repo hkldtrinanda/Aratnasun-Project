@@ -12,19 +12,14 @@ public class KarakterTalk : MonoBehaviour
     private Color noTalkColor;
     private Image myImage;
 
-
-    void Start()
-    {
-        
-    }
-
     
     void Update()
     {
-        myImage = GetComponent<Image>();
-        TalkColor = new Color32(255, 255, 225, 255);
-        noTalkColor = new Color32(106, 106, 106, 255);
+        myImage = GetComponent<Image>(); //Ambil Gambar
+        TalkColor = new Color32(255, 255, 225, 255); //Brightness 100%
+        noTalkColor = new Color32(106, 106, 106, 255); //Brightness 50%
 
+        //Bila UI_nama sesuai dengan nama_karakternya, maka gambar cerah
         if (UI_nama.text == nama_karakter)
         {
             myImage.color = TalkColor;
