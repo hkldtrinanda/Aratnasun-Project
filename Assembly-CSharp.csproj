@@ -60,9 +60,9 @@
     <Compile Include="Assets\Script\Interactive\NextScene.cs" />
     <Compile Include="Assets\LadderScript.cs" />
     <Compile Include="Assets\Script\Objective\TurnOnLamp.cs" />
+    <Compile Include="Assets\Script\UI\KarakterTalk.cs" />
     <Compile Include="Assets\Script\Character\WalkingSimulator.cs" />
     <Compile Include="Assets\Script\UI\Dialog.cs" />
-    <Compile Include="Assets\Script\UI\KarakterTalk.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
