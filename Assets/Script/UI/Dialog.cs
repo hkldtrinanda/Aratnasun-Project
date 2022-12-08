@@ -6,15 +6,21 @@ public class Dialog : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public TextMeshProUGUI namaCharacter;
+    public GameObject BGUI;
+    public GameObject Char1;
+    public GameObject Char2;
+    public GameObject player;
     public string[] name_character_di_sentences;
     public string[] sentences;
-    private int index;
     public float typingSpeed;
+    private int index;
 
     public GameObject continueButton;
 
     void Start()
     {
+        player.GetComponent<WalkingSimulator>().enabled = false;
+        player.GetComponent<LadderScript>().enabled = false;
         StartCoroutine(Type());
     }
 
@@ -52,6 +58,11 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             namaCharacter.text = "";
             continueButton.SetActive(false);
+            BGUI.SetActive(false);
+            Char1.SetActive(false);
+            Char2.SetActive(false);
+            player.GetComponent<WalkingSimulator>().enabled = true;
+            player.GetComponent<LadderScript>().enabled = true;
         }
     }
 }

@@ -477,6 +477,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 4304436801071828816}
   namaCharacter: {fileID: 4304436799254034602}
+  BGUI: {fileID: 4304436801235261378}
+  Char1: {fileID: 0}
+  Char2: {fileID: 0}
   name_character_di_sentences:
   - Lintang
   - Ibu

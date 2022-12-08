@@ -2,47 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class NextScene : MonoBehaviour
 {
-    [Header("Scene to load")] 
+    [Header("Scene to load")]
     public string sceneName;
-    
-    [Header ("Quit With Panel")]
-    public GameObject quitPanel;
-    // Start is called before the first frame update
+
+    bool loadingStarted = false;
+    float secondsLeft = 0;
+
     void Start()
     {
-        
+        StartCoroutine(DelayLoadLevel(81));
+    }
+    IEnumerator DelayLoadLevel(float seconds)
+    {
+        secondsLeft = seconds;
+        loadingStarted = true;
+        do
+        {
+            yield return new WaitForSeconds(1);
+        } while (--secondsLeft > 0);
+        SceneManager.LoadScene(sceneName);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (quitPanel.activeInHierarchy)
-            {
-                quitPanel.SetActive(false);
-                Debug.Log("Quit Panel is now false");
-            }
-            else
-            {
-                quitPanel.SetActive(true);
-                Debug.Log("Quit Panel is now true");
-            }
-        }
-        
-    }
-    
     public void LoadNextScene()
     {
         SceneManager.LoadScene(sceneName);
     }
-    
-    public void QuitGame()
-    {
-        Debug.Log("Quit");
-        Application.Quit();
-    }
+    //void OnGUI()
+    //{
+    //    if (loadingStarted)
+    //        GUI.Label(new Rect(0, 0, 100, 20), secondsLeft.ToString());
+    //}
 }
