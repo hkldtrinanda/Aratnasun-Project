@@ -25,7 +25,7 @@ public class WalkingSimulator : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        StartCoroutine(WaitBeforeShow());
+        
     }
     // Update is called once per frame
     private void Update()
@@ -37,47 +37,19 @@ public class WalkingSimulator : MonoBehaviour
         // KODE FLIP MOVEMENT
         if (movement < 0 && facingRight) Flip();
         if (movement > 0 && !facingRight) Flip();
-        
-        //duduk
-        /*if (Input.GetKeyDown(KeyCode.E) && gameObject.CompareTag("Object"))
-        {
-            anim.SetBool("Duduk", true);
-        }
-        else
-        {
-            anim.SetBool("Duduk", false);
-        }*/
 
         // KODE LOMPAT
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            anim.SetBool("isJumping", true);
         }
-        // ANIMATOR
-        /*if (Input.GetKeyDown(KeyCode.A))
+        else
         {
-            animator.SetBool("Run", true);
+            anim.SetBool("isJumping", false);
         }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            animator.SetBool("Run", false);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            animator.SetBool("Run", true);
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            animator.SetBool("Run", false);
-        }*/
-        // ESCAPE
 
-        /*if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("pause");
-        } */
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -85,22 +57,14 @@ public class WalkingSimulator : MonoBehaviour
         if(collision.tag == "FallDetector")
         {
             transform.position = respawnPoint;
-            
+            fallDetector.SetActive(true);
         }
         else if(collision.tag == "Checkpoint")
         {
             respawnPoint = transform.position;
         }
     }
-
-
     
-    private IEnumerator WaitBeforeShow()
-    {
-        yield return new WaitForSeconds(5f);
-        respawnPoint = transform.position;
-    }
-
     // KODE FLIP MOVEMENT
     private void Flip()
     {
