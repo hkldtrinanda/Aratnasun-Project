@@ -11,6 +11,7 @@ public class NextScene : MonoBehaviour
 
     bool loadingStarted = false;
     float secondsLeft = 0;
+    public GameObject skipButton;
 
     void Start()
     {
@@ -23,6 +24,10 @@ public class NextScene : MonoBehaviour
         do
         {
             yield return new WaitForSeconds(1);
+            if (secondsLeft < 66)
+            {
+                skipButton.SetActive(true);
+            }
         } while (--secondsLeft > 0);
         SceneManager.LoadScene(sceneName);
     }
