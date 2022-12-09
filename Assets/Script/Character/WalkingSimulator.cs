@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class WalkingSimulator : MonoBehaviour
@@ -8,6 +10,10 @@ public class WalkingSimulator : MonoBehaviour
     public float JumpForce = 7;
     public bool facingRight = true;
     public Animator anim;
+    
+    [Header("Respawn")]
+    public Vector3 respawnPoint;
+    public GameObject fallDetector;
 
     /*public GameObject bangku = GameObject.FindGameObjectWithTag("Object");*/
     public bool playerInrange;
@@ -19,6 +25,7 @@ public class WalkingSimulator : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        StartCoroutine(WaitBeforeShow());
     }
     // Update is called once per frame
     private void Update()
@@ -42,10 +49,10 @@ public class WalkingSimulator : MonoBehaviour
         }*/
 
         // KODE LOMPAT
-        /*if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        }*/
+        }
         // ANIMATOR
         /*if (Input.GetKeyDown(KeyCode.A))
         {
@@ -72,9 +79,26 @@ public class WalkingSimulator : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
+        if(collision.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+            
+        }
+        else if(collision.tag == "Checkpoint")
+        {
+            respawnPoint = transform.position;
+        }
+    }
+
+
+    
+    private IEnumerator WaitBeforeShow()
+    {
+        yield return new WaitForSeconds(5f);
+        respawnPoint = transform.position;
     }
 
     // KODE FLIP MOVEMENT

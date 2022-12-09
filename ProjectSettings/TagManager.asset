@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Object
   - Ladder
+  - Checkpoint
+  - FallDetector
   layers:
   - Default
   - TransparentFX
