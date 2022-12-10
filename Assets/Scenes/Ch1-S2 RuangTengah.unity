@@ -2727,16 +2727,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  anim: {fileID: 1214842210}
+  anim: {fileID: 0}
   rb: {fileID: 1214842208}
 --- !u!50 &1214842208 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6945994949848128452, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
-  m_PrefabInstance: {fileID: 954145601}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1214842210 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6945994949848128473, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
   m_PrefabInstance: {fileID: 954145601}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1461301353
@@ -3265,7 +3260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7028947
+      value: -3.703404
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3309,7 +3304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479729635151598088, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0008890629
       objectReference: {fileID: 0}
     - target: {fileID: 1479729635151598088, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.y

@@ -11,6 +11,9 @@ public class LadderScript : MonoBehaviour
 
     private bool isLadder;
     
+    [Header("NonActive Collider")]
+    public Collider2D nonActiveCollider;
+    
     public Animator anim;
     [SerializeField] private Rigidbody2D rb;
     
@@ -56,6 +59,7 @@ public class LadderScript : MonoBehaviour
         if (col.CompareTag("Ladder"))
         {
             isLadder = true;
+            nonActiveCollider.enabled = false;
         }
     }
 
@@ -65,6 +69,7 @@ public class LadderScript : MonoBehaviour
         {
             isLadder = false;
             isClimbing = false;
+            nonActiveCollider.enabled = true;
         }
 
     }
