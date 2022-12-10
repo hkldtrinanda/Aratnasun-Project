@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationScript : MonoBehaviour
+public class Interact_Dialog : MonoBehaviour
 {
-    public Animator animator;
-    public GameObject interactUI;
-    public bool PlayerInRange;
-    public AudioSource audioSource;
- 
-    public Collider2D collider;
+    private bool PlayerInRange;
+    private bool oneTime = false;
+    public GameObject dialog;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,32 +21,28 @@ public class AnimationScript : MonoBehaviour
         //Bila interaksi dalam jarak yg telah ditentukan, maka true
         if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
         {
-            if (animator.GetBool("IsOpen"))
+            dialog.SetActive(true);
+            //Selesaikan Dialog
+            while (dialog.GetComponent<Dialog>().textIsDone == false)
             {
-                Debug.Log("IsOpen False");
-                animator.SetBool("IsOpen", false);
-                audioSource.Stop();
+                Debug.Log("While");
+                continue;
             }
-            else
-            {
-                Debug.Log("IsOpen True");
-                animator.SetBool("IsOpen", true);
-                
-                audioSource.Play();
-                //collider.enabled = false;
-            }
-
+            Debug.Log("True");
+            oneTime = true;
+        }
+        else
+        {
+            dialog.SetActive(false);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Bila Collision deteksi tag "Player", maka
         if (collision.CompareTag("Player"))
         {
-            interactUI.SetActive(true);
             PlayerInRange = true;
-            
-            /*gameManager.counter++;*/
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -55,8 +50,7 @@ public class AnimationScript : MonoBehaviour
         //Bila Collision deteksi tag "Player" keluar, maka
         if (collision.CompareTag("Player"))
         {
-            interactUI.SetActive(false);
-            PlayerInRange = false;           
+            PlayerInRange = false;
         }
     }
 }

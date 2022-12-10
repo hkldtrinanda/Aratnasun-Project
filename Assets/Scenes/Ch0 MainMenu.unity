@@ -2316,7 +2316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad15dd0bbf1d430468bbebdaf541bb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Ch1OpeningCutscene
+  sceneName: Ch1-S0 OpeningCutscene
   animator: {fileID: 83736884}
   panelAwal: {fileID: 850789175}
   mainMenu: {fileID: 929777739}

@@ -321,7 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79a35c586b96044786ac2cafb82f411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: RuangKerjaAyah
+  sceneName: Ch1-S1 RuangKerjaAyah
+  animator: {fileID: 976578057}
   skipButton: {fileID: 1220818678}
 --- !u!1 &900829818
 GameObject:
@@ -621,6 +622,11 @@ Transform:
   m_Father: {fileID: 544445941}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &976578057 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8674363254648680614, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+  m_PrefabInstance: {fileID: 1544373644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1220818678
 GameObject:
   m_ObjectHideFlags: 0
