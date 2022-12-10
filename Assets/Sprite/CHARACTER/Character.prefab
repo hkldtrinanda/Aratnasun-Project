@@ -100,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032429576, y: 0.0005494356}
+  m_Offset: {x: -0.032429576, y: 0.0005493164}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,6 +163,8 @@ MonoBehaviour:
   JumpForce: 0
   facingRight: 1
   anim: {fileID: 6945994949848128473}
+  respawnPoint: {x: 0, y: 0, z: 0}
+  fallDetector: {fileID: 0}
   playerInrange: 0
   _rigidbody: {fileID: 6945994949848128452}
 --- !u!50 &6945994949848128452
@@ -185,4 +187,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

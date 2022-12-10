@@ -7,6 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     [Header("Scene to load")]
     public string sceneName;
+    public Animator animator;
 
     [Header("All Panel")]
     public GameObject panelAwal;
@@ -52,7 +53,9 @@ public class MainMenuController : MonoBehaviour
     }
     public void PlayGame()
     {
+        animator.SetTrigger("FadeOut");
         SceneManager.LoadScene(sceneName);
+
     }
 
     public void QuitGame()

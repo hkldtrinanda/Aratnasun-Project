@@ -22,12 +22,25 @@ public class PauseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pauseButton.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape))
+        if (!Pause.activeInHierarchy)
         {
-            pauseButton.SetActive(false);
-            inventoryButton.SetActive(false);
-            Pause.SetActive(true);
-            Time.timeScale = 0;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseButton.SetActive(false);
+                inventoryButton.SetActive(false);
+                Pause.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseButton.SetActive(true);
+                inventoryButton.SetActive(true);
+                Pause.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
         if (options.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape))
         {

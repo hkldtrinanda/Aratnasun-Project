@@ -8,6 +8,7 @@ public class NextScene : MonoBehaviour
 {
     [Header("Scene to load")]
     public string sceneName;
+    public Animator animator;
 
     bool loadingStarted = false;
     float secondsLeft = 0;
@@ -34,6 +35,7 @@ public class NextScene : MonoBehaviour
 
     public void LoadNextScene()
     {
+        animator.SetTrigger("FadeOut");
         SceneManager.LoadScene(sceneName);
     }
     //void OnGUI()

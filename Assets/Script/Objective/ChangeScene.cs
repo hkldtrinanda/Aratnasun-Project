@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public Animator animator;
+    public Animator fadeAnimator;
     public string sceneName;
     public GameObject lamp;
     public bool PlayerInRange;
@@ -35,9 +36,15 @@ public class ChangeScene : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = true;
-            SceneManager.LoadScene(sceneName);
-            
+            fadeAnimator.SetTrigger("FadeOut");
+
+            OnFadeComplete();
             /*gameManager.counter++;*/
         }
+    }
+
+    public void OnFadeComplete()
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
