@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseController : MonoBehaviour
 {
     public GameObject Pause;
-    public GameObject Option;
-    public GameObject Credit;
-    public GameObject inventoryButton;
-    public GameObject pauseButton;
+    public GameObject jurnalPanel;
     public GameObject options;
     public GameObject credit;
 
@@ -22,12 +19,10 @@ public class PauseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Pause.activeInHierarchy)
+        if (!Pause.activeInHierarchy && !jurnalPanel.activeInHierarchy)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                pauseButton.SetActive(false);
-                inventoryButton.SetActive(false);
                 Pause.SetActive(true);
                 Time.timeScale = 0;
             }
@@ -36,8 +31,6 @@ public class PauseController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                pauseButton.SetActive(true);
-                inventoryButton.SetActive(true);
                 Pause.SetActive(false);
                 Time.timeScale = 1;
             }
@@ -63,7 +56,7 @@ public class PauseController : MonoBehaviour
     public void quitGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Ch0 MainMenu");
 
     }
 }
