@@ -53,6 +53,12 @@ public class PauseController : MonoBehaviour
         Pause.SetActive(false);
     }
 
+    public void pause()
+    {
+        Pause.SetActive(true);
+        Time.timeScale = 0;
+    }
+
     public void quitGame()
     {
         Time.timeScale = 1;

@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_DialogArea : MonoBehaviour
+public class EnterPintu : MonoBehaviour
 {
-    private bool PlayerInRange;
-    private bool oneTime = false;
-    public GameObject dialog;
-    public GameObject quest1;
+    public Animator animator;
+    public GameObject interactUI;
+    public GameObject pintu;
     public GameObject quest2;
+    public bool PlayerInRange;
 
-
+    public Collider2D collider;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +21,11 @@ public class NPC_DialogArea : MonoBehaviour
     void Update()
     {
         //Bila interaksi dalam jarak yg telah ditentukan, maka true
-        if (PlayerInRange && !oneTime)
+        if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
         {
-            dialog.SetActive(true);
-            //Selesaikan Dialog
-            while (dialog.GetComponent<Dialog>().textIsDone == false) {
-                continue;
-            }
-            oneTime = true;
+            quest2.SetActive(false);
 
-        }
-        else { 
-            dialog.SetActive(false);
+            animator.SetTrigger("FadeOut");
         }
     }
 
@@ -41,9 +34,10 @@ public class NPC_DialogArea : MonoBehaviour
         //Bila Collision deteksi tag "Player", maka
         if (collision.CompareTag("Player"))
         {
+            interactUI.SetActive(true);
             PlayerInRange = true;
-            quest1.SetActive(false);
-            quest2.SetActive(true);
+
+            /*gameManager.counter++;*/
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -51,9 +45,8 @@ public class NPC_DialogArea : MonoBehaviour
         //Bila Collision deteksi tag "Player" keluar, maka
         if (collision.CompareTag("Player"))
         {
+            interactUI.SetActive(false);
             PlayerInRange = false;
-            quest1.SetActive(false);
-            quest2.SetActive(true);
         }
     }
 }
