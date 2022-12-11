@@ -23,7 +23,9 @@ public class Dialog : MonoBehaviour
     {
         //Disable Movement Player
         player.GetComponent<WalkingSimulator>().enabled = false;
-        player.GetComponent<LadderScript>().enabled = false;
+        if (player.GetComponent<LadderScript>() != null) { 
+            player.GetComponent<LadderScript>().enabled = false;
+        }
 
         StartCoroutine(Type());
     }
@@ -67,11 +69,15 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             namaCharacter.text = "";
 
-            //Menghilangan UI Dialog bila sudah selesai
+            //Menghilangkan UI Dialog bila sudah selesai
             continueButton.SetActive(false);
             BGUI.SetActive(false);
-            Char1.SetActive(false);
-            Char2.SetActive(false);
+            if (Char1 != null) { 
+                Char1.SetActive(false);
+            }
+            if (Char2 != null) { 
+                Char2.SetActive(false);
+            }
 
             //Enable Movement Player
             textIsDone = true;

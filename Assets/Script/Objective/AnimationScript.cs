@@ -26,7 +26,7 @@ public class AnimationScript : MonoBehaviour
             {
                 Debug.Log("IsOpen False");
                 animator.SetBool("IsOpen", false);
-                audioSource.Stop();
+                audioSource.Stop();                
             }
             else
             {
@@ -34,7 +34,7 @@ public class AnimationScript : MonoBehaviour
                 animator.SetBool("IsOpen", true);
                 
                 audioSource.Play();
-                //collider.enabled = false;
+                interactUI.SetActive(false);
             }
 
         }

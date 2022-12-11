@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact_Dialog : MonoBehaviour
+public class Interact_Dialog_AfterAnother : MonoBehaviour
 {
-    
     private bool PlayerInRange;
-    private bool oneTime = false;
+    public bool oneTime = false;
+    public Animator animator; 
     public GameObject dialog;
+    public Collider2D collider;
 
 
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class Interact_Dialog : MonoBehaviour
     void Update()
     {
         //Bila interaksi dalam jarak yg telah ditentukan, maka true
-        if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
+        if (PlayerInRange && !animator.GetBool("OneTime") && animator.GetBool("IsOpen"))
         {
             dialog.SetActive(true);
             //Selesaikan Dialog
@@ -31,6 +32,7 @@ public class Interact_Dialog : MonoBehaviour
             }
             Debug.Log("True");
             oneTime = true;
+            collider.enabled = false;
         }
         else
         {

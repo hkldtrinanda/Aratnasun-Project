@@ -80,6 +80,7 @@
     <Compile Include="Assets\Script\UI\Dialog.cs" />
     <Compile Include="Assets\Script\Parallax\ParallaxLayer.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
+    <Compile Include="Assets\Script\Interactive\Interact_Dialog_AfterAnother.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
