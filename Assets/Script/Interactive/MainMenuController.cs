@@ -51,11 +51,10 @@ public class MainMenuController : MonoBehaviour
             }
         }
     }
-    public void PlayGame()
+
+    public void FadeOutAnimation()
     {
         animator.SetTrigger("FadeOut");
-        SceneManager.LoadScene(sceneName);
-
     }
 
     public void QuitGame()

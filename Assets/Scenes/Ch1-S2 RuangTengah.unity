@@ -502,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543142492}
   - component: {fileID: 543142493}
+  - component: {fileID: 543142494}
   m_Layer: 0
   m_Name: RightSide
   m_TagString: Untagged
@@ -532,9 +533,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 543142491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b9130e6a4d0254eacdbc034083e3c1, type: 3}
+  m_Script: {fileID: 11500000, guid: ae0ae201dd490064194d88b2e4be424b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeAnimator: {fileID: 958166006}
+  sceneName: Ch1-S3 RuangMakan
+  collider: {fileID: 543142494}
+--- !u!61 &543142494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543142491}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6.5173016, y: -0.675058}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9994278, y: 2.6805656}
+  m_EdgeRadius: 0
 --- !u!1 &788142794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,6 +2203,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6945994949848128451, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1214842209}
+    - target: {fileID: 6945994949848128451, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
       propertyPath: JumpForce
       value: 2
       objectReference: {fileID: 0}
@@ -2357,6 +2391,29 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8674363254648680615, guid: 12b79613272e1324cb612488be8bd516, type: 3}
   m_PrefabInstance: {fileID: 958166003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &958166005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674363254648680612, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+  m_PrefabInstance: {fileID: 958166003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &958166006 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8674363254648680614, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+  m_PrefabInstance: {fileID: 958166003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958166007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958166005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb3d3769ffb02499b6d7b227e8e668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Ch1-S3 RuangMakan
 --- !u!1 &1002093029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4304436801106549023, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
@@ -2517,7 +2574,7 @@ Canvas:
   m_GameObject: {fileID: 1059503152}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2661,16 +2718,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  anim: {fileID: 1214842210}
+  nonActiveCollider: {fileID: 0}
+  anim: {fileID: 0}
   rb: {fileID: 1214842208}
 --- !u!50 &1214842208 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6945994949848128452, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
   m_PrefabInstance: {fileID: 954145601}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1214842210 stripped
+--- !u!95 &1214842209 stripped
 Animator:
-  m_CorrespondingSourceObject: {fileID: 6945994949848128473, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1587860362357613463, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
   m_PrefabInstance: {fileID: 954145601}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1461301353
@@ -3203,7 +3261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.702962
+      value: -3.7028947
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.y

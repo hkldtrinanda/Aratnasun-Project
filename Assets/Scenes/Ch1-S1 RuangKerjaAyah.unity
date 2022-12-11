@@ -2010,6 +2010,11 @@ Transform:
   m_Father: {fileID: 1314324334}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &955052985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6945994949848128474, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+  m_PrefabInstance: {fileID: 6945994949184029815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1014643588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5002,6 +5007,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429877097}
   m_CullTransparentMesh: 1
+--- !u!1 &1513927631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674363254648680612, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+  m_PrefabInstance: {fileID: 8674363253916039333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513927632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513927631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb3d3769ffb02499b6d7b227e8e668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Ch1-S2 RuangTengah
 --- !u!1 &1533313970
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,6 +5840,10 @@ PrefabInstance:
       propertyPath: Char1
       value: 
       objectReference: {fileID: 1258987213}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 955052985}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
       value: 1
@@ -6867,7 +6894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.682962
+      value: -5.6828947
       objectReference: {fileID: 0}
     - target: {fileID: 1479729634912816242, guid: 96fcf3c249ed762418782f9e490d1746, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6987,6 +7014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6945994949848128451, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 6945994949184029816}
     - target: {fileID: 6945994949848128453, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7037,6 +7068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+--- !u!95 &6945994949184029816 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1587860362357613463, guid: da27c3a04ed648e46be1e284f9146bff, type: 3}
+  m_PrefabInstance: {fileID: 6945994949184029815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7095304404408480890
 PrefabInstance:
   m_ObjectHideFlags: 0
