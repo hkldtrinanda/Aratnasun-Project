@@ -7,6 +7,8 @@ public class NPC_DialogArea : MonoBehaviour
     private bool PlayerInRange;
     private bool oneTime = false;
     public GameObject dialog;
+    public GameObject quest1;
+    public GameObject quest2;
 
 
     // Start is called before the first frame update
@@ -30,6 +32,8 @@ public class NPC_DialogArea : MonoBehaviour
         }
         else { 
             dialog.SetActive(false);
+            quest1.SetActive(false);
+            quest2.SetActive(true);
         }
     }
 
