@@ -7,8 +7,8 @@ public class NPC_DialogArea : MonoBehaviour
     private bool PlayerInRange;
     private bool oneTime = false;
     public GameObject dialog;
-    public GameObject quest1;
-    public GameObject quest2;
+    public GameObject questSelesai;
+    public GameObject questBaru;
 
 
     // Start is called before the first frame update
@@ -42,8 +42,10 @@ public class NPC_DialogArea : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = true;
-            quest1.SetActive(false);
-            quest2.SetActive(true);
+            if (questSelesai != null || questBaru != null) { 
+                questSelesai.SetActive(false);
+                questBaru.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,8 +54,11 @@ public class NPC_DialogArea : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = false;
-            quest1.SetActive(false);
-            quest2.SetActive(true);
+            if (questSelesai != null || questBaru != null)
+            {
+                questSelesai.SetActive(false);
+                questBaru.SetActive(true);
+            }
         }
     }
 }
