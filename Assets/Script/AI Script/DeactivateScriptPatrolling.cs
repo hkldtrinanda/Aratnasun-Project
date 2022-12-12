@@ -1,11 +1,12 @@
-using System;
+    using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeactivateScript : MonoBehaviour
+public class DeactivateScriptPatrolling : MonoBehaviour
 {
-    public AIChasing aiChasing;
+    [Header("Scripted NonActive When Triggering")]
+    public Patrolling aiChasing;
     // Start is called before the first frame update
     void Start()
     {

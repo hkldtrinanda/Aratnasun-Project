@@ -32,12 +32,14 @@ public class LadderScript : MonoBehaviour
         {
             isClimbing = true;
             anim.SetBool("isClimbing", true);
+            nonActiveCollider.enabled = false;
             /*transform.Translate(Vector3.up * vertical * speed * Time.deltaTime);*/
         }
         else
         {
             isClimbing = false;
             anim.SetBool("isClimbing", false);
+            nonActiveCollider.enabled = true;
         }
     }
 
@@ -59,7 +61,7 @@ public class LadderScript : MonoBehaviour
         if (col.CompareTag("Ladder"))
         {
             isLadder = true;
-            nonActiveCollider.enabled = false;
+            
         }
     }
 
