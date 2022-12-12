@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Ch1S1Controller : MonoBehaviour
 {
-    public Animator animator;
+    public float chapterBoxdelay = 0f;
     public GameObject Chapter1box;
+    public Animator animator;
     public GameObject Questbox;
     public GameObject pauseButton;
     public GameObject jurnalButton;
@@ -23,11 +24,15 @@ public class Ch1S1Controller : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {;
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+    {
+        chapterBoxdelay -= Time.deltaTime;
+        if (chapterBoxdelay <= 0f) { 
+            Chapter1box.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D) || chapterBoxdelay <= 0f)
         {
             Chapter1box.SetActive(false);
-            
             pauseButton.SetActive(true);
             if (!quest2.activeInHierarchy)
             {

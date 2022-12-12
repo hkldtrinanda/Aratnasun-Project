@@ -5057,8 +5057,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824d293c8a8b922439f17de1a0c3c147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 579442286}
+  chapterBoxdelay: 3
   Chapter1box: {fileID: 1341276763}
+  animator: {fileID: 579442286}
   Questbox: {fileID: 1712337468}
   pauseButton: {fileID: 744859148}
   jurnalButton: {fileID: 176116086}
