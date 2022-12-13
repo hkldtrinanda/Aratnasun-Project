@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 5f);
         }
         transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         audioSource.Play();
-       Debug.Log("Enemy took damage");
-        
+        Debug.Log("Enemy took damage");
     }
 }

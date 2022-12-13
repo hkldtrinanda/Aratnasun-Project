@@ -63,6 +63,9 @@ public class WalkingSimulator : MonoBehaviour
         {
             respawnPoint = transform.position;
         }
+
+        
+        
     }
     
     // KODE FLIP MOVEMENT

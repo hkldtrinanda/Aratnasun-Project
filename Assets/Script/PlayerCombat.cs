@@ -28,7 +28,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (timeBetweenAttacks <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.Keypad0))
+            if (Input.GetKeyDown(KeyCode.K))
             {
                 attackSound.Play();
                 animator.SetTrigger("Attack");

@@ -6,7 +6,8 @@ using UnityEngine;
 public class DeactivateScriptPatrolling : MonoBehaviour
 {
     [Header("Scripted NonActive When Triggering")]
-    public Patrolling aiChasing;
+    public Patrolling AIPatrolling;
+    public AIChasing AIChasing;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class DeactivateScriptPatrolling : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            aiChasing.enabled = false;
+            AIPatrolling.enabled = false;
+            AIChasing.enabled = false;
         }
     }
 }
