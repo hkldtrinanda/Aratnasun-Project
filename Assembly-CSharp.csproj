@@ -88,6 +88,7 @@
      <Compile Include="Assets\Script\Objective\Ch1S2Controller.cs" />
      <Compile Include="Assets\Script\UI\KarakterTalk.cs" />
      <Compile Include="Assets\Script\PlayerCombat.cs" />
+     <Compile Include="Assets\Script\Puzzle_KliknDrop.cs" />
      <Compile Include="Assets\Script\Parallax\ParallaxCamera.cs" />
      <Compile Include="Assets\Script\Inventory\Model\StatsModifiers\CharacterStatModifierSO.cs" />
      <Compile Include="Assets\PanelInteractive.cs" />
@@ -108,7 +109,6 @@
      <Compile Include="Assets\Script\Inventory\UI\UIInventoryDescription.cs" />
      <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
      <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
-     <Compile Include="Assets\Script\Puzzle_KliknDrop.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Sprite\SPLASHSCREEN\Readme!.txt" />
