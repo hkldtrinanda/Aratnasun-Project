@@ -28,14 +28,14 @@ RectTransform:
   m_GameObject: {fileID: 3968648328999316616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.29682022, y: 0.29682022, z: 0.29682022}
   m_Children: []
   m_Father: {fileID: 4304436801235261389}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 401, y: -466}
+  m_AnchoredPosition: {x: 134.3, y: -151.8}
   m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8335003151228797989
@@ -159,14 +159,14 @@ RectTransform:
   m_GameObject: {fileID: 4304436799254034603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2876256, y: 0.30819222, z: 1}
   m_Children: []
   m_Father: {fileID: 4304436801235261389}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -229.399, y: -205.753}
+  m_AnchoredPosition: {x: -77.1, y: -73}
   m_SizeDelta: {x: 307.282, y: 140.214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4304436799254034645
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -39.995026, y: 0, z: -46.148087, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 4304436801071828818}
   - component: {fileID: 4304436801071828819}
   - component: {fileID: 4304436801071828816}
+  - component: {fileID: 814063132}
   m_Layer: 5
   m_Name: TextDialog
   m_TagString: Untagged
@@ -293,14 +294,14 @@ RectTransform:
   m_GameObject: {fileID: 4304436801071828817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8375, y: 1, z: 1}
+  m_LocalScale: {x: 0.26815262, y: 0.31217423, z: 1}
   m_Children: []
   m_Father: {fileID: 4304436801235261389}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61.638, y: -392.528}
+  m_AnchoredPosition: {x: 17.1, y: -130.2}
   m_SizeDelta: {x: 942.122, y: 196.046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4304436801071828819
@@ -400,6 +401,62 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &814063132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304436801071828817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4304436801071828816}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4304436801147234931}
+        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_MethodName: SkipTyping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4304436801106549023
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4304436801106549022
 Transform:
   m_ObjectHideFlags: 0
@@ -425,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 4304436801106549023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 490.07205, y: 260.8917, z: -126.96574}
-  m_LocalScale: {x: 2.7988338, y: 2.7988338, z: 2.7988338}
+  m_LocalScale: {x: 8.693684, y: 8.693684, z: 8.693684}
   m_Children:
   - {fileID: 4304436801235261389}
   - {fileID: 4304436801147234928}
@@ -483,16 +540,9 @@ MonoBehaviour:
   player: {fileID: 0}
   name_character_di_sentences:
   - Lintang
-  - Ibu
-  - Lintang
-  - Ibu
   sentences:
-  - Permata? Menarik juga. Aku kecewa ayah menyembunyikan semua rahasia ini dariku.
-    Apakah aku tidak pantas mendapatkan semua kekayaan ini dimata dia?
-  - Dek, keluar yuk. Gak baik merenung terus. Apa yang sudah pergi sebaiknya kita
-    ikhlas-
-  - Apa ibu tau tentang jurnal ini?
-  - ...
+  - Jurnal dan permata? Menarik juga. Aku kecewa ayah menyembunyikan semua rahasia
+    ini dariku. Apakah aku tidak pantas mendapatkan semua kekayaan ini dimata dia?
   typingSpeed: 0.02
   textIsDone: 0
   continueButton: {fileID: 3968648328999316616}
@@ -523,14 +573,14 @@ RectTransform:
   m_GameObject: {fileID: 4304436801233960251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.33328125, y: 0.3075138, z: 1}
   m_Children: []
   m_Father: {fileID: 4304436801235261389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00067139, y: -330.097}
+  m_AnchoredPosition: {x: -0.00071735, y: -113}
   m_SizeDelta: {x: 1920, y: 419.406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4304436801233960228
@@ -598,7 +648,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4304436801235261378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 126.96574}
+  m_LocalPosition: {x: 0, y: 0, z: 45.3638}
   m_LocalScale: {x: 0.35729167, y: 0.35729167, z: 0.35729167}
   m_Children:
   - {fileID: 4304436801233960250}
@@ -610,8 +660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -147.07205, y: -67.89169}
-  m_SizeDelta: {x: 1920, y: 1080.3499}
+  m_AnchoredPosition: {x: -62.37314, y: -29.830889}
+  m_SizeDelta: {x: 631, y: 354.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4304436801235261390
 Canvas:

@@ -15,6 +15,7 @@ public class Dialog : MonoBehaviour
     public string[] sentences; //Banyak Sentences
     public float typingSpeed; //Kecepatan ketik
     public bool textIsDone = false;
+    private bool fastType = false;
     private int index;
 
     public GameObject continueButton; //Tombol Next
@@ -49,9 +50,14 @@ public class Dialog : MonoBehaviour
         
         //Text Diketik sesuai kecepatan
         foreach (char letter in sentences[index].ToCharArray()) {
+            if (fastType) {
+                textDisplay.text += letter;
+                continue;
+            }
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        fastType = false;
     }
 
     public void NextSentence() {
@@ -84,5 +90,9 @@ public class Dialog : MonoBehaviour
             player.GetComponent<WalkingSimulator>().enabled = true;
             player.GetComponent<LadderScript>().enabled = true;
         }
+    }
+
+    public void SkipTyping() {
+        fastType = true;
     }
 }
