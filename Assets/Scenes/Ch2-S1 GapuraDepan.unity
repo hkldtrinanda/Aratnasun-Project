@@ -1835,7 +1835,7 @@ PrefabInstance:
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 1862112490}
+      objectReference: {fileID: 1862112486}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: Char1
       value: 
