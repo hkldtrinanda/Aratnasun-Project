@@ -16,6 +16,8 @@ public class PanelInteractive : MonoBehaviour
     
     public bool playerInRange;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +32,14 @@ public class PanelInteractive : MonoBehaviour
             if (panel.activeInHierarchy)
             {
                 panel.SetActive(false);
+                
                 stopWalk.MovementSpeed = 2f;
                 stopWalk.JumpForce = 4f;
             }
             else
             {
                 panel.SetActive(true);
+                
                 stopWalk.MovementSpeed = 0;
                 stopWalk.JumpForce = 0;
             }
