@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Objective\InteractableScript.cs" />
      <Compile Include="Assets\Script\Inventory\Model\EdibleItemSO.cs" />
      <Compile Include="Assets\Script\ObjectFollow.cs" />
      <Compile Include="Assets\Script\Objective\EnterPintu.cs" />
@@ -68,10 +69,12 @@
      <Compile Include="Assets\Script\Inventory\Model\ItemParameters\ItemParameterSO.cs" />
      <Compile Include="Assets\Script\Character\LadderScript.cs" />
      <Compile Include="Assets\Script\Objective\TurnOnLamp.cs" />
+     <Compile Include="Assets\Sprite\ENVIRONMENT\rumah kepala suku\susunan puzzle new\DragBear.cs" />
      <Compile Include="Assets\Script\AI Script\DeactivateScriptPatrolling.cs" />
      <Compile Include="Assets\Script\Inventory\UI\ItemActionPanel.cs" />
      <Compile Include="Assets\Script\Interactive\MainMenuController.cs" />
      <Compile Include="Assets\Script\Enemy.cs" />
+     <Compile Include="Assets\PuzzleAppear.cs" />
      <Compile Include="Assets\Script\Character\NPC\NPC_DialogArea.cs" />
      <Compile Include="Assets\Health.cs" />
      <Compile Include="Assets\Script\Inventory\UI\UIInventoryPage.cs" />
@@ -95,6 +98,7 @@
      <Compile Include="Assets\Script\GameManager\AppearCounterObject.cs" />
      <Compile Include="Assets\Script\AI Script\AIChasing.cs" />
      <Compile Include="Assets\Script\Character\WalkingSimulator.cs" />
+     <Compile Include="Assets\Sprite\ENVIRONMENT\rumah kepala suku\susunan puzzle new\FeedBackBear.cs" />
      <Compile Include="Assets\Script\Parallax\ParallaxBackground.cs" />
      <Compile Include="Assets\Script\Inventory\Model\EquippableItemSO.cs" />
      <Compile Include="Assets\Script\Inventory\UI\UIItemUsed.cs" />
@@ -109,10 +113,6 @@
      <Compile Include="Assets\Script\Inventory\UI\UIInventoryDescription.cs" />
      <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
      <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
-     <Compile Include="Assets\Script\Objective\InteractableScript.cs" />
-     <Compile Include="Assets\Sprite\ENVIRONMENT\rumah kepala suku\susunan puzzle new\DragBear.cs" />
-     <Compile Include="Assets\Sprite\ENVIRONMENT\rumah kepala suku\susunan puzzle new\FeedBackBear.cs" />
-     <Compile Include="Assets\PuzzleAppear.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Sprite\SPLASHSCREEN\Readme!.txt" />

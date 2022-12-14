@@ -6,7 +6,7 @@ using UnityEngine;
 public class CollectibleScript : MonoBehaviour
 {
     public GameManager gameManager;
-    public GameObject collectible;
+    public GameObject collectible, AppeargameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +25,7 @@ public class CollectibleScript : MonoBehaviour
         {
             gameManager.counter++;
             Destroy(collectible);
+            AppeargameObject.SetActive(true);
             
         }
     }

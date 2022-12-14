@@ -23,7 +23,7 @@ public class AppearCounterObject : MonoBehaviour
         if (gameManager.counter == counterNeeded)
         {
             objectToAppear.SetActive(true);
-            col.enabled = true;
+            col.enabled = false;
         }
 
     }
