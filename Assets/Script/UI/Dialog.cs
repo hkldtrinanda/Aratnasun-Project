@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     public GameObject Char1;
     public GameObject Char2;
     public GameObject player;
+    public Patrolling npc;
     public string[] name_character_di_sentences; //nama karakter di sentences N
     public string[] sentences; //Banyak Sentences
     public float typingSpeed; //Kecepatan ketik
@@ -22,11 +23,13 @@ public class Dialog : MonoBehaviour
 
     void Start()
     {
-        //Disable Movement Player
+        //Disable Movement Player & NPC
         player.GetComponent<WalkingSimulator>().enabled = false;
-        if (player.GetComponent<LadderScript>() != null) { 
+        if (player.GetComponent<LadderScript>() != null)
             player.GetComponent<LadderScript>().enabled = false;
-        }
+        if (npc.GetComponent<Patrolling>() != null)
+            npc.enabled = false;
+        
 
         StartCoroutine(Type());
     }
@@ -88,7 +91,10 @@ public class Dialog : MonoBehaviour
             //Enable Movement Player
             textIsDone = true;
             player.GetComponent<WalkingSimulator>().enabled = true;
-            player.GetComponent<LadderScript>().enabled = true;
+            if (player.GetComponent<LadderScript>() != null)
+                player.GetComponent<LadderScript>().enabled = true;
+            if (npc.GetComponent<Patrolling>() != null)
+                npc.enabled = true;
         }
     }
 

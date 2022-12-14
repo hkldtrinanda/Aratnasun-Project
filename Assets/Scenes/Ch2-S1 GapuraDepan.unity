@@ -1833,6 +1833,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1862112490}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: Char1
       value: 
       objectReference: {fileID: 1692759045}
@@ -4584,7 +4588,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1864996696}
   - component: {fileID: 1864996697}
-  - component: {fileID: 1864996698}
   m_Layer: 0
   m_Name: Collider Check
   m_TagString: Untagged
@@ -4632,19 +4635,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4226241, y: 0.095199645}
   m_EdgeRadius: 0
---- !u!114 &1864996698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864996695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7560bd0fd2edda94088752e6c24a322a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiChasing: {fileID: 1862112490}
 --- !u!1001 &1887480939
 PrefabInstance:
   m_ObjectHideFlags: 0
