@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\GameManager\CollectibleScript.cs" />
     <Compile Include="Assets\Script\Interactive\Ch1EndingScene.cs" />
     <Compile Include="Assets\Script\Interactive\FadeAnimation.cs" />
+    <Compile Include="Assets\Script\Interactive\Interact_Dialog_AfterDialog.cs" />
     <Compile Include="Assets\Script\UI\DialogSyarat.cs" />
     <Compile Include="Assets\Script\Inventory\PickUpSystem\PickUpSystem.cs" />
     <Compile Include="Assets\Script\Interactive\NextScene.cs" />
