@@ -2602,10 +2602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654f8beb274d3ec41abe2a40fba44ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelDeactivate: {fileID: 279829668}
-  AppearObject: {fileID: 1979163904}
-  col: {fileID: 1853474382}
-  selesai: 0
 --- !u!1 &1505894502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3000,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
+  appearCounterObject: {fileID: 0}
+  dialogSyarat: {fileID: 0}
+  dialog: {fileID: 0}
+  oneTime: 0
 --- !u!4 &1849089817
 Transform:
   m_ObjectHideFlags: 0
