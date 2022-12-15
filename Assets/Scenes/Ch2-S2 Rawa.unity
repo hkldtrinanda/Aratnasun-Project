@@ -4805,7 +4805,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -16.039543, y: -1.4522085}
@@ -4834,11 +4834,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  fadeAnimator: {fileID: 0}
+  fadeAnimator: {fileID: 1456328845}
   sceneName: Ch2-S3 GapuraDepan
   lamp: {fileID: 0}
   PlayerInRange: 0
-  collider: {fileID: 0}
+  collider: {fileID: 627445049}
 --- !u!1 &631045432
 GameObject:
   m_ObjectHideFlags: 0
