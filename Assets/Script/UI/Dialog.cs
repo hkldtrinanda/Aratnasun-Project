@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class Dialog : MonoBehaviour
 {
     //Deklar
@@ -12,6 +14,8 @@ public class Dialog : MonoBehaviour
     public GameObject Char2;
     public GameObject player;
     public GameObject npc;
+    public string sceneName;
+
     public string[] name_character_di_sentences; //nama karakter di sentences N
     public string[] sentences; //Banyak Sentences
     public float typingSpeed; //Kecepatan ketik
@@ -97,6 +101,8 @@ public class Dialog : MonoBehaviour
             if (npc != null)
                 if (npc.GetComponent<Patrolling>() != null)
                     npc.GetComponent<Patrolling>().enabled = true;
+            if(sceneName != null)
+                SceneManager.LoadScene(sceneName);
         }
     }
 

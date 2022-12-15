@@ -25,7 +25,6 @@ public class AppearCounterObject : MonoBehaviour
             objectToAppear.SetActive(true);
             col.enabled = false;
         }
-
     }
 
 }

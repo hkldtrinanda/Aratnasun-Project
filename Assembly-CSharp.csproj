@@ -118,6 +118,7 @@
     <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
     <Compile Include="Assets\Script\Objective\Ch2S1Controller.cs" />
+    <Compile Include="Assets\Script\UI\DialogSyarat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

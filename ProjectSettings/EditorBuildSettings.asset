@@ -29,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ch2-S1 GapuraDepan.unity
     guid: f642f7215f22c8c48bec7abb32255078
+  - enabled: 1
+    path: Assets/Scenes/Ch2-S2 Rawa.unity
+    guid: 5ee917133f76557489cb2fabf5d78a37
+  - enabled: 1
+    path: Assets/Scenes/Ch2-S3 GapuraDepan.unity
+    guid: 4a1d6e548c7b75a43b7a412f7e841ce7
+  - enabled: 1
+    path: Assets/Scenes/Ch2-S4 Desa.unity
+    guid: 8a6073c73542d5c49a80cd05ddd3b862
+  - enabled: 1
+    path: Assets/Scenes/Ch2-S5 DalamRumah.unity
+    guid: 61146fd42f9a1984e8ba76ecc78c245c
   m_configObjects: {}
