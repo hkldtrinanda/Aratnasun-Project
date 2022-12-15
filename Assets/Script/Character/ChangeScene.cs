@@ -21,13 +21,15 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (animator.GetBool("IsOpen"))
-        {
-            collider.enabled = true;
-        }
-        else
-        {
-            collider.enabled = false;
+        if (animator != null) { 
+            if (animator.GetBool("IsOpen"))
+            {
+                collider.enabled = true;
+            }
+            else
+            {
+                collider.enabled = false;
+            }
         }
     }
 
@@ -36,8 +38,9 @@ public class ChangeScene : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = true;
+
             fadeAnimator.SetTrigger("FadeOut");
-            /*gameManager.counter++;*/
+            
         }
     }
 }

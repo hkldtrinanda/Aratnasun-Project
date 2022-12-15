@@ -18,10 +18,12 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (dialogSyarat.oneTime == true && counter == appearCounterObject.counterNeeded && oneTime == false)
-        {
-            dialog.SetActive(true);
-            oneTime = true;
+        if (dialogSyarat != null && appearCounterObject != null && dialog != null) { 
+            if (dialogSyarat.oneTime == true && counter == appearCounterObject.counterNeeded && oneTime == false)
+            {
+                dialog.SetActive(true);
+                oneTime = true;
+            }
         }
     }
 }
