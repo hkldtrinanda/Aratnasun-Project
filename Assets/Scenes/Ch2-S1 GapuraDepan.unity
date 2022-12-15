@@ -5298,7 +5298,7 @@ PrefabInstance:
       objectReference: {fileID: 1178347052}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[0]
@@ -5307,60 +5307,78 @@ PrefabInstance:
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[1]
       value: Wah jangan galak-galak dong pak, Aku ini seorang penjelajah dari kota
-        pak, kebetulan aku lagi tertarik banget nih dengan budaya dayak ini
+        pak
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[2]
+      value: kebetulan aku lagi tertarik banget nih dengan budaya dayak ini
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[3]
       value: Jadi jika bapak ijinkan aku lewat, aku pengen meneliti budaya yang ada
         di desa ini pak!
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
-      propertyPath: sentences.Array.data[3]
-      value: 'Lancang sekali kamu ya anak muda! Dulu juga ada orang lain yang mirip
-        kamu persis, dia juga datang dari kota '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[4]
-      value: dan betapa bodohnya kami karena membiarkan dia lewat begitu saja. Tanpa
-        diketahui kedatangannya membawa kutukan bagi tuan putri kami!
+      value: Lancang sekali kamu ya anak muda! Dulu juga ada orang lain yang mirip
+        kamu persis
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[5]
+      value: 'dia juga datang dari kota dan betapa bodohnya kami karena membiarkan
+        dia lewat begitu saja. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: Tanpa diketahui kedatangannya membawa kutukan bagi tuan putri kami!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[7]
       value: Kalo boleh tau, apa yang sudah dia lakukan sehingga membuat tuan putri
         dayak terkutuk?
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
-      propertyPath: sentences.Array.data[6]
-      value: Pendatang itu awalnya disambut oleh tuan putri langsung. Tapi ternyata
-        dia membawa penyakit yang membuatnya terkutuk.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
-      propertyPath: sentences.Array.data[7]
-      value: Si pendatang tidak mengindahkan nasihat-nasihat kami, dan tuan putri
-        kami-lah yang dikutuk oleh alam.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[8]
-      value: 'Hanya ada satu tumbuhan magis yang dapat menyembuhkan tuan putri kami,
-        dan tumbuhan itu mustahil untuk didapatkan. '
+      value: Pendatang itu awalnya disambut oleh tuan putri langsung. Tapi ternyata
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[9]
-      value: 'Tanaman Kenanga itu tumbuh hanya pada rawa-rawa yang menyelimuti sekitaran
-        desa kami, dan rawa tersebut banyak dihuni oleh mahluk mematikan. '
+      value: dia membawa penyakit yang membuatnya terkutuk. Si pendatang tidak mengindahkan
+        nasihat-nasihat kami
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[10]
-      value: Kami khawatir tidak ada yang bisa kami lakukan. Itulah mengapa kami
-        melarang pendatang manapun untuk masuk ke desa kami!
+      value: dan tuan putri kami-lah yang dikutuk oleh alam.
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[11]
+      value: Hanya ada satu tumbuhan magis yang dapat menyembuhkan tuan putri kami
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[12]
+      value: dan tumbuhan itu mustahil untuk didapatkan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[13]
+      value: Tanaman Kenanga itu tumbuh hanya pada rawa-rawa yang menyelimuti sekitaran
+        desa kami
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[14]
+      value: dan rawa tersebut banyak dihuni oleh mahluk mematikan. Kami khawatir
+        tidak ada yang bisa kami lakukan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[15]
+      value: Itulah mengapa kami melarang pendatang manapun untuk masuk ke desa kami!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[16]
       value: Ohh, jadi begitu.
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.size
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[0]
@@ -5376,7 +5394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[3]
-      value: Penjaga
+      value: Lintang
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[4]
@@ -5384,7 +5402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[5]
-      value: Lintang
+      value: Penjaga
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[6]
@@ -5392,7 +5410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[7]
-      value: Penjaga
+      value: Lintang
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[8]
@@ -5408,6 +5426,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[11]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[12]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[13]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[14]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[15]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[16]
       value: Lintang
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801233960250, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}

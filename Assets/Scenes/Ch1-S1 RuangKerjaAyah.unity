@@ -4419,6 +4419,27 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 955052985}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Permata? Menarik juga. Aku kecewa ayah menyembunyikan semua rahasia
+        ini dariku.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: Apakah aku tidak pantas mendapatkan semua kekayaan ini dimata dia?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[1]
+      value: Lintang
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
 --- !u!1 &1513927631 stripped

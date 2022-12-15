@@ -629,6 +629,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 772241468}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sceneName
+      value: Ch2-S3 GapuraDepan
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: fadeAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -6588,6 +6596,10 @@ PrefabInstance:
       propertyPath: fadeAnimator
       value: 
       objectReference: {fileID: 1456328845}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Saatnya kembali ke Penjaga tadi!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
 --- !u!1 &1043933066 stripped
@@ -9154,6 +9166,10 @@ PrefabInstance:
       value: Ch2-S3 GapuraDepan
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: fadeAnimator
+      value: 
+      objectReference: {fileID: 1456328845}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -9878,6 +9894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904197205}
+  - component: {fileID: 1904197206}
   m_Layer: 0
   m_Name: DialogSyarat
   m_TagString: Untagged
@@ -9899,6 +9916,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904197206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904197204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f520797482d6e4dbbe3d1a2acc2daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 573880870}
+  appearCounterObject: {fileID: 573880872}
+  dialogNotDone: {fileID: 219675920}
+  dialogDone: {fileID: 38778979}
+  oneTime: 0
 --- !u!1 &1953626703
 GameObject:
   m_ObjectHideFlags: 0

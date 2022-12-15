@@ -1683,6 +1683,48 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 683366654}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: Tapi, Tumanggung, pemuda ini membawa kenanga daripada rawa mematikan
+        itu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Ini tidak mungkin. Bawa bunga ini ke Putri Ina. Cepat!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: Baik, Tumanggung
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: Pendatang biasanya membawa malapetaka. Namun kamu ini berbeda, Nak.
+        Apa yang membuat kamu spesial?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: name_character_di_sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[2]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[3]
+      value: Kepala Suku
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[4]
+      value: Penjaga
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[5]
+      value: Kepala Suku
+      objectReference: {fileID: 0}
     - target: {fileID: 7912334613603665394, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
       propertyPath: m_Name
       value: DialogW_Lintang
@@ -1797,10 +1839,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

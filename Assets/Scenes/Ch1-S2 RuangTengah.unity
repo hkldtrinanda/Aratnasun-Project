@@ -4619,7 +4619,7 @@ PrefabInstance:
       objectReference: {fileID: 1214842206}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[0]
@@ -4632,39 +4632,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: Jadi kamu udah nemuin? mau buat apa jurnal itu, kamu sudah tahu kan
-        sekarang kenapa ayahmu itu sering pergi meninggalkan kita, dia terlalu terobsesi
-        dengan petualangannya sampai lupa dengan keluarga. ibu ngga mau ya kamu menjadi
-        seperti ayahmu.
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[3]
       value: Jadi kamu udah nemuin? mau buat apa jurnal itu, kamu sudah tahu kan
-        sekarang kenapa ayahmu itu sering pergi meninggalkan kita, dia terlalu terobsesi
-        dengan petualangannya sampai lupa dengan keluarga. ibu ngga mau ya kamu menjadi
-        seperti ayahmu.
+        sekarang kenapa ayahmu itu sering pergi meninggalkan kita
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[4]
-      value: "Tapi permata permata ini\u2026"
+      value: dia terlalu terobsesi dengan petualangannya sampai lupa dengan keluarga.
+        ibu ngga mau ya kamu menjadi seperti ayahmu.
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[5]
-      value: Adalah kebohongan. Semuanya adalah kebohongan, dan ayahmu percaya akan
-        kebohongan-kebohongan tersebut. Ia bawa obsesinya sampai mati, dan selama
-        ibu hidup, ibu tidak akan pernah membiarkan kamu mengikuti jalannya.
+      value: "Tapi permata permata ini\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: Baik bu.
+      value: ... adalah kebohongan. Semuanya adalah kebohongan, dan ayahmu percaya
+        akan kebohongan-kebohongan tersebut.
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[7]
+      value: Ia bawa obsesinya sampai mati, dan selama ibu hidup, ibu tidak akan
+        pernah membiarkan kamu mengikuti jalannya.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[8]
+      value: ... Baik bu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: sentences.Array.data[9]
       value: Yasudah. Ini sudah sore, sebaiknya kita makan, yuk.
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[0]
@@ -4684,18 +4688,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[4]
-      value: Lintang
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
-      propertyPath: name_character_di_sentences.Array.data[5]
       value: Ibu
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
-      propertyPath: name_character_di_sentences.Array.data[6]
+      propertyPath: name_character_di_sentences.Array.data[5]
       value: Lintang
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[6]
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: name_character_di_sentences.Array.data[7]
+      value: Ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[8]
+      value: Lintang
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: name_character_di_sentences.Array.data[9]
       value: Ibu
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801233960250, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}

@@ -1001,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8674363254648680615, guid: 12b79613272e1324cb612488be8bd516, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8674363254648680615, guid: 12b79613272e1324cb612488be8bd516, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04fb3d3769ffb02499b6d7b227e8e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Ch2-S5 DalamRumah
+  sceneName: Ch2-S5 DalamRumah Fix
 --- !u!95 &579168460 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8674363254648680614, guid: 12b79613272e1324cb612488be8bd516, type: 3}
@@ -1416,7 +1416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2279416431504125994, guid: 3e858907f2fe3b445bb2093f1a624514, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2279416431504125994, guid: 3e858907f2fe3b445bb2093f1a624514, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2262,7 +2262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   fadeAnimator: {fileID: 579168460}
-  sceneName: Ch2-S5 DalamRumah
+  sceneName: Ch2-S5 DalamRumah Fix
   lamp: {fileID: 0}
   PlayerInRange: 0
   collider: {fileID: 868537922}
@@ -2287,7 +2287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7710159295492726365, guid: 87dbfa1fdff3f6d449cbf6bad8169cc3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7710159295492726365, guid: 87dbfa1fdff3f6d449cbf6bad8169cc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2577,7 +2577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_AnchorMax.x
