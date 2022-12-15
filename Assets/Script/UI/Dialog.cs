@@ -15,6 +15,7 @@ public class Dialog : MonoBehaviour
     public GameObject player;
     public GameObject npc;
     public string sceneName;
+    public Animator fadeAnimator;
 
     public string[] name_character_di_sentences; //nama karakter di sentences N
     public string[] sentences; //Banyak Sentences
@@ -101,8 +102,8 @@ public class Dialog : MonoBehaviour
             if (npc != null)
                 if (npc.GetComponent<Patrolling>() != null)
                     npc.GetComponent<Patrolling>().enabled = true;
-            if(sceneName != null)
-                SceneManager.LoadScene(sceneName);
+            if (sceneName != null)
+                fadeAnimator.SetTrigger("FadeOut");
         }
     }
 

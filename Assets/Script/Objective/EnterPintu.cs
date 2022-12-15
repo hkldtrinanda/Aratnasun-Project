@@ -7,6 +7,7 @@ public class EnterPintu : MonoBehaviour
     public Animator animator;
     public GameObject interactUI;
     public GameObject pintu;
+    public GameObject soto;
     public GameObject quest2;
     public bool PlayerInRange;
 
@@ -23,9 +24,13 @@ public class EnterPintu : MonoBehaviour
         //Bila interaksi dalam jarak yg telah ditentukan, maka true
         if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
         {
-            quest2.SetActive(false);
+            if(!soto.activeInHierarchy)
+            {
+                quest2.SetActive(false);
 
-            animator.SetTrigger("FadeOut");
+                animator.SetTrigger("FadeOut");
+            }
+            
         }
     }
 

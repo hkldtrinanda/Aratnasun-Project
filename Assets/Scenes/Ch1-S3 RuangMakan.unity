@@ -2989,6 +2989,7 @@ MonoBehaviour:
   animator: {fileID: 298047581}
   interactUI: {fileID: 656915324}
   pintu: {fileID: 1299886360}
+  soto: {fileID: 141606532}
   quest2: {fileID: 1642899317}
   PlayerInRange: 0
   collider: {fileID: 1299886364}

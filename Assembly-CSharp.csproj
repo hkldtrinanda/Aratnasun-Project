@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\GameManager\CollectibleScript.cs" />
     <Compile Include="Assets\Script\Interactive\Ch1EndingScene.cs" />
     <Compile Include="Assets\Script\Interactive\FadeAnimation.cs" />
+    <Compile Include="Assets\Script\UI\DialogSyarat.cs" />
     <Compile Include="Assets\Script\Inventory\PickUpSystem\PickUpSystem.cs" />
     <Compile Include="Assets\Script\Interactive\NextScene.cs" />
     <Compile Include="Assets\Script\AI Script\Patrolling.cs" />
@@ -113,12 +114,11 @@
     <Compile Include="Assets\Script\GameManager\GameManager.cs" />
     <Compile Include="Assets\Script\Parallax\ParallaxLayer.cs" />
     <Compile Include="Assets\Script\Inventory\UI\UIInventoryItem.cs" />
+    <Compile Include="Assets\Script\Objective\Ch2S1Controller.cs" />
     <Compile Include="Assets\Script\Inventory\Model\InventorySO.cs" />
     <Compile Include="Assets\Script\Inventory\UI\UIInventoryDescription.cs" />
     <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
-    <Compile Include="Assets\Script\Objective\Ch2S1Controller.cs" />
-    <Compile Include="Assets\Script\UI\DialogSyarat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

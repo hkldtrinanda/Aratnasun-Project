@@ -22,6 +22,11 @@ public class Ch2S1Controller : MonoBehaviour
             Chapter2box.SetActive(false);
         }
 
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            Chapter2box.SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.B))
         {
             jurnalPanel.SetActive(true);
