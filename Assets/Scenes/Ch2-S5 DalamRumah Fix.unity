@@ -388,6 +388,24 @@ PrefabInstance:
       objectReference: {fileID: 358078615}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92963adfcfb95c54f93a2495be290a12, type: 3}
+--- !u!1 &531999956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674363254648680612, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+  m_PrefabInstance: {fileID: 847380587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &531999957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531999956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb3d3769ffb02499b6d7b227e8e668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!114 &555851313 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
@@ -1957,9 +1975,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1053831912}
     - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 683366654}
+    - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
+      propertyPath: questName
+      value: quest puzzle
+      objectReference: {fileID: 0}
     - target: {fileID: 7912334613567190686, guid: ae10c2695d7814849a913cea99edf9ac, type: 3}
       propertyPath: sentences.Array.size
       value: 5
@@ -2332,6 +2358,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1705570090}
     m_Modifications:
+    - target: {fileID: 1704088917046921163, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7994fc454d04c54bb364d64dea762b1, type: 3}
+    - target: {fileID: 1704088917046921163, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2402,7 +2436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 117.193
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2422,13 +2456,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1704088917046921165, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
 --- !u!224 &1872988786 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1704088917046921164, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
+  m_PrefabInstance: {fileID: 1872988785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1872988787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1704088917046921165, guid: 56bc9e2e9d0ce4f4e82a65090763d968, type: 3}
   m_PrefabInstance: {fileID: 1872988785}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004618651 stripped
@@ -2524,13 +2563,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 240193908}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: Char2
       value: 
       objectReference: {fileID: 1765769174}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 1872988787}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 683366654}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: questName
+      value: quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
+      propertyPath: fadeAnimator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.size
       value: 15

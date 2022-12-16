@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.Mathematics;
+using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class Dialog : MonoBehaviour
     public GameObject npc;
     public string sceneName;
     public Animator fadeAnimator;
+    public GameObject quest;
 
     public string[] name_character_di_sentences; //nama karakter di sentences N
     public string[] sentences; //Banyak Sentences
@@ -98,12 +101,21 @@ public class Dialog : MonoBehaviour
             textIsDone = true;
             player.GetComponent<WalkingSimulator>().enabled = true;
             if (player.GetComponent<LadderScript>() != null)
+            {
                 player.GetComponent<LadderScript>().enabled = true;
-            if (npc != null)
-                if (npc.GetComponent<Patrolling>() != null)
-                    npc.GetComponent<Patrolling>().enabled = true;
+            }
+            if (npc != null && npc.GetComponent<Patrolling>() != null)
+            {
+                npc.GetComponent<Patrolling>().enabled = true;
+            }
+            if (quest != null)
+            {
+                quest.SetActive(true);
+            }
             if (sceneName != null)
+            {
                 fadeAnimator.SetTrigger("FadeOut");
+            }
         }
     }
 
