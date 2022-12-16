@@ -23,8 +23,6 @@ public class DestroyNPC : MonoBehaviour
         if (col.gameObject.tag == "NPC")
         {
             Destroy(npc);
-            col.enabled = false;
-
         }
     }
 }
