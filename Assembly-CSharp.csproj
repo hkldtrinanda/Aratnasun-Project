@@ -121,6 +121,7 @@
     <Compile Include="Assets\Script\Inventory\UI\UIInventoryDescription.cs" />
     <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
+    <Compile Include="Assets\Script\Objective\JurnalController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
