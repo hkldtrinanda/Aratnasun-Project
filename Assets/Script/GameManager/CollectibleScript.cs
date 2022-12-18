@@ -7,6 +7,7 @@ public class CollectibleScript : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject collectible, AppeargameObject;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class CollectibleScript : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             gameManager.counter++;
+            audioSource.Play();
             Destroy(collectible);
             AppeargameObject.SetActive(true);
             

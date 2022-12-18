@@ -8,6 +8,7 @@ public class InteractSoto : MonoBehaviour
     public GameObject interactUI;
     public GameObject soto;
     public GameObject quest1;
+    public AudioSource audioSource;
     public bool PlayerInRange;
 
     public Collider2D collider;
@@ -23,6 +24,7 @@ public class InteractSoto : MonoBehaviour
         //Bila interaksi dalam jarak yg telah ditentukan, maka true
         if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
         {
+            audioSource.Play();
             soto.SetActive(false);
             quest1.SetActive(false);
 

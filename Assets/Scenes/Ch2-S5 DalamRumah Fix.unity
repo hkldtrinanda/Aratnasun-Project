@@ -344,11 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10410702596656418, guid: 92963adfcfb95c54f93a2495be290a12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.03
+      value: -4.976
       objectReference: {fileID: 0}
     - target: {fileID: 10410702596656418, guid: 92963adfcfb95c54f93a2495be290a12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.35
+      value: -3.374
       objectReference: {fileID: 0}
     - target: {fileID: 10410702596656418, guid: 92963adfcfb95c54f93a2495be290a12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3659,7 +3659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}
       propertyPath: sentences.Array.data[5]
-      value: 'Terimalah nasihat ini Nak: Hutan adalah tempat yang menakutkan. | Ia
+      value: 'Terimalah nasihat ini Nak: Hutan adalah tempat yang menakutkan. Ia
         adalah rumah bagi para malapetaka yang menantimu.'
       objectReference: {fileID: 0}
     - target: {fileID: 4304436801147234931, guid: a021bfb6375fb0548bd56cb2e62b96bf, type: 3}

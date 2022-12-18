@@ -146,6 +146,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   respawnPoint: {x: 0, y: 0, z: 0}
   fallDetector: {fileID: 0}
+  audioWalk: {fileID: 0}
+  audioJump: {fileID: 0}
   playerInrange: 0
   _rigidbody: {fileID: 6945994949848128452}
 --- !u!50 &6945994949848128452

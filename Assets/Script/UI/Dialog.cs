@@ -10,6 +10,7 @@ public class Dialog : MonoBehaviour
 {
     //Deklar
     public TextMeshProUGUI textDisplay;
+    public AudioSource audioTyping;
     public TextMeshProUGUI namaCharacter;
     public GameObject BGUI;
     public GameObject Char1;
@@ -59,6 +60,9 @@ public class Dialog : MonoBehaviour
 
         //Clear Text Area
         textDisplay.text = "";
+
+        //Audio ketik
+        audioTyping.Play();
         
         //Text Diketik sesuai kecepatan
         foreach (char letter in sentences[index].ToCharArray()) {
@@ -69,6 +73,7 @@ public class Dialog : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        audioTyping.Stop();
         fastType = false;
     }
 
