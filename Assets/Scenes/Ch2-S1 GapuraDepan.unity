@@ -3090,6 +3090,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 154
       objectReference: {fileID: 0}
+    - target: {fileID: 3733200800185751288, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4006361613123310510, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}
       propertyPath: m_Name
       value: Jurnal Panel
@@ -3241,6 +3245,14 @@ PrefabInstance:
     - target: {fileID: 5096476576400178243, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653016439809882289, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854440775136719755, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 962c36eab69014947903a9e7824a8ea3, type: 3}

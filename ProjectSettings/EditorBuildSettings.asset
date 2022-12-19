@@ -39,9 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Ch2-S4 Desa.unity
     guid: 8a6073c73542d5c49a80cd05ddd3b862
   - enabled: 1
-    path: Assets/Scenes/Ch2-S5 DalamRumah.unity
-    guid: 61146fd42f9a1984e8ba76ecc78c245c
-  - enabled: 1
     path: Assets/Scenes/Ch2-S5 DalamRumah Fix.unity
-    guid: 6685e4781b8a8d24c96807229b180936
+    guid: ad149b0c265a5884ca7b692ae13e25f3
+  - enabled: 1
+    path: Assets/Scenes/Ch2-S6.unity
+    guid: de53da33b7a67c744b348ece0da3bbcb
   m_configObjects: {}

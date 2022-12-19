@@ -5,8 +5,9 @@ using UnityEngine;
 public class InteractableScript : MonoBehaviour
 {
 
-    public GameObject interactUI, panelActivate;
+    public GameObject interactUI, panelActivate, objectDissapear;
     public bool PlayerInRange;
+    public WalkingSimulator player;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,8 @@ public class InteractableScript : MonoBehaviour
             else
             {
                 panelActivate.SetActive(true);
+                player._rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+                objectDissapear.SetActive(false);
             }
 
         }

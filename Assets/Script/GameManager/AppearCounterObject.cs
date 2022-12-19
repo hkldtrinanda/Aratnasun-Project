@@ -7,7 +7,7 @@ public class AppearCounterObject : MonoBehaviour
     public int counterNeeded;
     public GameManager gameManager;
 
-    public GameObject objectToAppear;
+    public GameObject objectToAppear,objectDissapear;
     public Collider2D col;
 
     
@@ -23,6 +23,7 @@ public class AppearCounterObject : MonoBehaviour
         if (gameManager.counter == counterNeeded)
         {
             objectToAppear.SetActive(true);
+            objectDissapear.SetActive(false);
             col.enabled = false;
         }
     }

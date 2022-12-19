@@ -35,6 +35,7 @@ public class AnimationScript : MonoBehaviour
                 
                 audioSource.Play();
                 interactUI.SetActive(false);
+                collider.enabled = true;
             }
 
         }
