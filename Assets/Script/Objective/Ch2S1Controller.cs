@@ -10,6 +10,7 @@ public class Ch2S1Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.changeMusic();
         Chapter2box.SetActive(true);
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - FallDetector
   - NPC
+  - Game Music
   layers:
   - Default
   - TransparentFX

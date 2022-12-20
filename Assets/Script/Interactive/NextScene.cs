@@ -16,6 +16,7 @@ public class NextScene : MonoBehaviour
 
     void Start()
     {
+        SoundManager.Instance.changeMusic();
         StartCoroutine(DelayLoadLevel(81));
     }
     IEnumerator DelayLoadLevel(float seconds)

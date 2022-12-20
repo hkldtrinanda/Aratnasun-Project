@@ -9,6 +9,7 @@ public class Ch1S2Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.changeMusic();
     }
 
     // Update is called once per frame

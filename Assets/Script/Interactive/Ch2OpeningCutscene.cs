@@ -14,6 +14,7 @@ public class Ch2OpeningCutscene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.changeMusic();
         StartCoroutine(DelayLoadLevel(43));
     }
 

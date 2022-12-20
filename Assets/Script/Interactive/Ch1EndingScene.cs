@@ -15,6 +15,7 @@ public class Ch1EndingScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.changeMusic();
         StartCoroutine(DelayLoadLevel(28));
     }
     IEnumerator DelayLoadLevel(float seconds)
