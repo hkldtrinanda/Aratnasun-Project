@@ -9,6 +9,7 @@ public class PauseController : MonoBehaviour
     public GameObject jurnalPanel;
     public GameObject options;
     public GameObject credit;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PauseController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                audioSource.Play();
                 Pause.SetActive(true);
                 Time.timeScale = 0;
             }
@@ -31,17 +33,20 @@ public class PauseController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                audioSource.Play();
                 Pause.SetActive(false);
                 Time.timeScale = 1;
             }
         }
         if (options.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape))
         {
+            audioSource.Play();
             options.SetActive(false);
             Pause.SetActive(true);
         }
         if (credit.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape))
         {
+            audioSource.Play();
             credit.SetActive(false);
             Pause.SetActive(true);
         }
@@ -49,12 +54,14 @@ public class PauseController : MonoBehaviour
 
     public void resume()
     {
+        audioSource.Play();
         Time.timeScale = 1;
         Pause.SetActive(false);
     }
 
     public void pause()
     {
+        audioSource.Play();
         Pause.SetActive(true);
         Time.timeScale = 0;
     }

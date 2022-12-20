@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 545892329}
   - component: {fileID: 545892328}
   m_Layer: 0
-  m_Name: Right Side
+  m_Name: PintuTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
   interactUI: {fileID: 509758824}
   PlayerInRange: 0
   audioSource: {fileID: 579442290}
-  collider: {fileID: 0}
+  collider: {fileID: 579442288}
 --- !u!82 &579442290
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6587,7 +6587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6928533521775579197, guid: 459afd602bd855944a2a635c9c70e8bf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459afd602bd855944a2a635c9c70e8bf, type: 3}

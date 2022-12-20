@@ -91,6 +91,7 @@ public class Dialog : MonoBehaviour
         else {
             textDisplay.text = "";
             namaCharacter.text = "";
+            audioTyping.Stop();
 
             //Menghilangkan UI Dialog bila sudah selesai
             continueButton.SetActive(false);
@@ -117,7 +118,7 @@ public class Dialog : MonoBehaviour
             {
                 quest.SetActive(true);
             }
-            if (sceneName != null)
+            if (sceneName != "")
             {
                 fadeAnimator.SetTrigger("FadeOut");
             }

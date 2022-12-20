@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractableScript : MonoBehaviour
 {
 
-    public GameObject interactUI, panelActivate, objectDissapear;
+    public GameObject interactUI, panelActivate, objectDissapear, uiHilang;
     public bool PlayerInRange;
     public WalkingSimulator player;
 
@@ -23,11 +23,13 @@ public class InteractableScript : MonoBehaviour
         {
             if (panelActivate.activeInHierarchy)
             {
+                uiHilang.SetActive(true);
                 panelActivate.SetActive(false);
                 
             }
             else
             {
+                uiHilang.SetActive(false);
                 panelActivate.SetActive(true);
                 player._rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 objectDissapear.SetActive(false);
