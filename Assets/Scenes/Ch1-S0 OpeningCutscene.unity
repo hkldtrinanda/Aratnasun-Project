@@ -123,24 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &46518794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8674363254648680612, guid: 12b79613272e1324cb612488be8bd516, type: 3}
-  m_PrefabInstance: {fileID: 1544373644}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &46518795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46518794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04fb3d3769ffb02499b6d7b227e8e668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Ch1-S1 RuangKerjaAyah
 --- !u!1 &544445938
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 627440010}
     m_Modifications:
+    - target: {fileID: 5235413706134544808, guid: 12b79613272e1324cb612488be8bd516, type: 3}
+      propertyPath: sceneName
+      value: Ch1-S1 RuangKerjaAyah
+      objectReference: {fileID: 0}
     - target: {fileID: 8674363254648680612, guid: 12b79613272e1324cb612488be8bd516, type: 3}
       propertyPath: m_Name
       value: Fade

@@ -74,6 +74,7 @@
     <Compile Include="Assets\Script\Objective\InteractSoto.cs" />
     <Compile Include="Assets\Script\Inventory\Model\ItemParameters\ItemParameterSO.cs" />
     <Compile Include="Assets\Script\Character\LadderScript.cs" />
+    <Compile Include="Assets\Script\BGM &amp; SFX\SoundSetting.cs" />
     <Compile Include="Assets\Script\Objective\TurnOnLamp.cs" />
     <Compile Include="Assets\Sprite\ENVIRONMENT\rumah kepala suku\susunan puzzle new\DragBear.cs" />
     <Compile Include="Assets\Script\AI Script\DeactivateScriptPatrolling.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Assets\Script\Parallax\ParallaxBackground.cs" />
     <Compile Include="Assets\Script\Inventory\Model\EquippableItemSO.cs" />
     <Compile Include="Assets\Script\Inventory\UI\UIItemUsed.cs" />
+    <Compile Include="Assets\Script\BGM &amp; SFX\SoundManager.cs" />
     <Compile Include="Assets\Script\EndedVideo.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog_AfterAnother.cs" />
     <Compile Include="Assets\Script\Character\ChangeScene.cs" />
@@ -126,8 +128,7 @@
     <Compile Include="Assets\Script\Interactive\interact_NPC.cs" />
     <Compile Include="Assets\Script\Interactive\Ch2OpeningCutscene.cs" />
     <Compile Include="Assets\Script\Interactive\Interact_Dialog.cs" />
-    <Compile Include="Assets\Script\BGM &amp; SFX\SoundManager.cs" />
-    <Compile Include="Assets\Script\BGM &amp; SFX\SoundSetting.cs" />
+    <Compile Include="Assets\Script\BGM &amp; SFX\SoundEffectManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -55,7 +55,6 @@ public class Ch1S1Controller : MonoBehaviour
             {
                 quest1_2.SetActive(false);
                 quest1.SetActive(false);
-                Time.timeScale = 0;
                 
                 quest2.SetActive(true);
                 jurnalPanel.SetActive(true);
